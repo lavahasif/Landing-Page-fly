@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Webpage with Video</title>
+    <style>
+                        body {
+                          background-color: #121212; /* Dark background color */
+                          color: #ffffff; /* Light text color */
+                          font-family: "Raleway", sans-serif; /* Raleway font */
+                          margin: 0;
+                          padding: 0;
+                        }
+
+                        /* Navbar styles */
+                        nav {
+                          background-color: transparent; /* Transparent navbar background color */
+                          padding: 10px;
+                          text-align: center;
+                          width: 100%;
+                          position: absolute;
+                          z-index: 1;
+                        }
+
+                        nav a {
+                          color: #ffffff; /* Light navbar text color */
+                          text-decoration: none;
+                          padding: 14px 16px;
+                          display: inline-block;
+                        }
+
+                        /* Video section styles */
+                        #video-section {
+                          position: relative;
+                          height: 100vh;
+                          overflow: hidden;
+                          color: white;
+                          font-weight: bold; /* Bold text in the video section */
+                        }
+
+                        #video-container {
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                          overflow: hidden;
+                        }
+
+                        /* #video-container video {
+                          width: 100%;
+                          height: 100%;
+                          object-fit: cover;
+                          opacity: 0.7; /* Set the video opacity */
+                        } */
+                        #video-container {
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 70%;
+                          overflow: hidden;
+                          transition: background var(--overlay-transition, 0.3s),
+                            border-radius var(--border-transition, 0.3s),
+                            opacity var(--overlay-transition, 0.3s);
+                        }
+
+
+                  #video-container video {
+                      width: 100%;
+                      height: 80%;
+                      object-fit: cover;
+                  }
+
+                        #content {
+                          position: absolute;
+                          top: 50%;
+                          left: 50%;
+                          transform: translate(-50%, -50%);
+                          text-align: center;
+                        }
+
+                        /* Other section styles */
+                        section {
+                          padding: 50px 0;
+                          text-align: center;
+                        }
+                        .my-rounded-button {
+                border-radius: 50%;
+            }
+            #btn_call_now {
+          border-radius: 20px;
+          font-size: medium;
+          font-weight: 650;
+          background: #B7000E;
+          /* height: 33px; */
+          --bs-btn-padding-y: 0px;
+          --bs-btn-padding-x: 24px;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <a href="#"
+        ><img
+          height="45"
+          src="https://www.creativezone.ae/wp-content/uploads/Group-452.png"
+      /></a>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Discover Premier</a>
+      <a href="#">Media</a>
+      <a href="#">Contact Us</a>
+      <a
+        id="btn_call_now"
+        class="btn btn-danger btn-rounded my-rounded-button btn_call_now"
+        >CALL NOW</a
+      >
+    </nav>
+
+    <!-- Video Section -->
+    <section id="video-section">
+      <div id="video-container">
+        <video autoplay muted loop>
+          <source src="video/Premier - Creative Zone.mov" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div id="content">
+        <h2>Welcome to our website</h2>
+        <h2>This is the first section with a video background.</h2>
+      </div>
+    </section>
+
+    <!-- Other Sections -->
+    <section>
+      <h2>Section 1</h2>
+      <p>Content of Section 1 goes here.</p>
+    </section>
+
+    <section>
+      <h2>Section 2</h2>
+      <p>Content of Section 2 goes here.</p>
+    </section>
+
+    <section>
+      <h2>Section 3</h2>
+      <p>Content of Section 3 goes here.</p>
+    </section>
+
+    <section>
+      <h2>Section 4</h2>
+      <p>Content of Section 4 goes here.</p>
+    </section>
+
+    <section>
+      <h2>Section 5</h2>
+      <p>Content of Section 5 goes here.</p>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
